@@ -5,13 +5,121 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-      <h1>Before s1</h1>
-      <p>Done!!</p>
+    <!--<div class="logocom" >The <strong id="logo">X</strong>pertz</div>-->
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" id="navId">
+      <li class="nav-item">
+        <a href="#tab1Id" class="nav-link active">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="#tab5Id" class="nav-link">About us</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Our services</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#tab2Id"><span>-</span> Domain & Hosting </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#tab2Id"><span>-</span> Web Development </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#tab2Id"><span>-</span>  Content Writing  </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#tab3Id"><span>-</span>  Social-Media Mkt. </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#tab2Id"><span>-</span> S.E.O.  </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#tab2Id"><span>-</span>  Product Photography  </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#tab3Id"><span>-</span>  E-Commerce Solution </a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="#tab5Id" class="nav-link">Careers</a>
+      </li>
+      <li class="nav-item">
+        <a href="#tab5Id" class="nav-link">Get a Free Quote</a>
+      </li>
+      <li class="nav-item">
+        <a href="#tab5Id" class="nav-link">Our portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a href="#tab5Id" class="nav-link">Our Clients</a>
+      </li>
+      <li class="nav-item">
+        <a href="#tab5Id" class="nav-link">Contact us</a>
+      </li>
+      <li class="nav-item">
+        <a href="#tab5Id" class="nav-link">Blog</a>
+      </li>
+      <li class="nav-item p-3">
+        <a href="#" class="fa fa-2x fa-facebook"></a>
+      </li>
+      <li class="nav-item p-3">
+        <a href="#" class="fa fa-2x fa-twitter"></a>
+      </li>
+      <li class="nav-item p-3">
+        <a href="#" class="fa  fa-2x fa-linkedin"></a>
+      </li>
+    </ul>
+    
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+      <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+    </div>
+    <div class="container">
+      <div id="top" class="img-responsive" >
+        <img src="./top1.jpg" alt="group">
+      </div>
+      <div>
+        <h1 class="text-center">Web Development</h1>
+      </div>
+        <div  class="row">
+          <div  class="col webdev">
+            <img  src="./webdev.jpg" alt="webdev">
+            <div class="text"><strong>Why Choose us</strong>
+              <br/>We cover a wide range in
+              PHP Development services. <br/>
+              
+              We deal in static PHP web development
+              as well as dynamic PHP
+              website development.<br/>
+              
+              We also deal in blog
+              creation using wordpress.<br/>
+              
+              We also provide e-commerce
+              solutions to our clients using
+              Magento and Open Cart.<br/>
+              
+              Moreover we provide content
+              management systems
+              Development using Joomla<br/></div>
+          </div>
+          <div class="col" >
+            <p>---Web Development Islamabad Lahore Karachi Pakistan</p>
+            <h2>Web Development Company</h2>
+            <p>A forward looking company managed by professionals in their respective fields, Xpertz continuously strives to provide tailor made cutting edge solutions, through out of box thinking, for our valued clients.Our commitment is to provide very contemporary solutions to web site development. So if you are looking for a dedicated, thorough, and multi-disciplined web development company give us a call.</p>
+          </div>
+        </div>
+    </div>
+    
+    
+    <script>
+      $('#navId a').click(e => {
+        e.preventDefault();
+        $(this).tab('show');
+      });
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
